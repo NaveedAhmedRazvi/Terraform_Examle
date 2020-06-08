@@ -1,3 +1,3 @@
-output "address" {
-  value = "${aws_elb.web.dns_name}"
+output "public_dns" {
+  value = "${aws_instance.ubuntu.public_dns}"
 }
